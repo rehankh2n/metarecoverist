@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Meta Recoverist — social media account recovery and support services.">
+<title>Meta Recoverist | Account Recovery Specialists</title>
+<style>
+:root{
+  --bg:#080b0d; --panel:#101419; --panel2:#12181a; --text:#f4f7f5;
+  --muted:#9aa3a7; --green:#b8ff38; --green2:#63f29b; --line:rgba(184,255,56,.20);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+  color:var(--text); background:
+  radial-gradient(circle at 8% 18%,rgba(184,255,56,.08),transparent 28%),
+  radial-gradient(circle at 92% 40%,rgba(0,255,180,.08),transparent 28%),var(--bg);
+  line-height:1.6;
+}
+a{text-decoration:none;color:inherit}
+html,body{overflow-x:hidden}
+.container{width:min(1120px,92%);margin:auto}
+header{
+  position:sticky;top:0;z-index:50;background:rgba(8,11,13,.82);
+  backdrop-filter:blur(18px);border-bottom:1px solid rgba(255,255,255,.07)
+}
+.nav{height:78px;display:flex;align-items:center;justify-content:space-between}
+.brand{display:flex;align-items:center;gap:13px;font-weight:800}
+.logo{
+  width:48px;height:48px;border-radius:15px;display:grid;place-items:center;
+  color:#061006;font-size:23px;font-weight:950;
+  background:linear-gradient(135deg,var(--green),var(--green2));
+  box-shadow:0 0 30px rgba(184,255,56,.2)
+}
+.brand span{font-size:20px;letter-spacing:-.5px}
+.brand small{display:block;color:#9ba4a7;font-size:9px;letter-spacing:3px;margin-top:-2px}
+.navlinks{display:flex;gap:28px;color:#b6bdc0;font-size:14px;align-items:center}
+.login-btn{padding:9px 15px;border:1px solid var(--line);border-radius:12px;color:var(--green);font-weight:800;font-size:13px}
+.navlinks a:hover{color:var(--green)}
+.menu{display:none;font-size:28px;background:none;border:0;color:white}
+.hero{padding:80px 0 55px;position:relative;overflow:hidden}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:45px;align-items:center}
+.badge,.pill{
+  display:inline-flex;align-items:center;gap:8px;border:1px solid var(--line);
+  border-radius:999px;padding:8px 14px;color:var(--green);font-size:12px;
+  background:rgba(184,255,56,.045)
+}
+h1{font-size:clamp(48px,7vw,86px);line-height:.95;letter-spacing:-4px;margin:22px 0}
+.gradient{background:linear-gradient(100deg,#fff 15%,var(--green) 55%,var(--green2));-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero p{font-size:18px;color:var(--muted);max-width:650px}
+.actions{display:flex;gap:13px;flex-wrap:wrap;margin-top:30px}
+.btn{padding:13px 20px;border-radius:14px;border:1px solid rgba(255,255,255,.12);font-weight:750}
+.btn.primary{background:linear-gradient(135deg,var(--green),var(--green2));color:#071006;box-shadow:0 0 35px rgba(184,255,56,.18)}
+.btn.secondary{background:#101419}
+.visual{
+  min-height:430px;border:1px solid rgba(255,255,255,.1);border-radius:30px;
+  background:linear-gradient(145deg,rgba(184,255,56,.07),rgba(255,255,255,.02));
+  position:relative;display:grid;place-items:center;overflow:hidden
+}
+.visual:before{content:"";position:absolute;width:330px;height:330px;border-radius:50%;background:rgba(184,255,56,.12);filter:blur(75px)}
+.shield{
+  position:relative;width:210px;height:245px;border:3px solid var(--green);
+  clip-path:polygon(50% 0,91% 17%,91% 58%,77% 78%,50% 96%,23% 78%,9% 58%,9% 17%);
+  display:grid;place-items:center;background:rgba(184,255,56,.035)
+}
+.check{font-size:80px;color:var(--green);text-shadow:0 0 28px rgba(184,255,56,.5)}
+.float-card{
+  position:absolute;background:#0d1115;border:1px solid rgba(184,255,56,.45);
+  border-radius:18px;padding:15px 18px;box-shadow:0 15px 45px rgba(0,0,0,.35)
+}
+.float-card strong{color:var(--green);font-size:26px;display:block}
+.float-card.one{top:35px;right:25px}.float-card.two{bottom:35px;left:25px}
+.trust{margin:20px 0 75px;text-align:center}
+.trustbox{border:1px solid rgba(255,255,255,.1);border-radius:999px;padding:17px;color:var(--green);font-weight:800;letter-spacing:1px}
+.section{padding:65px 0}
+.section-title{text-align:center;max-width:700px;margin:0 auto 38px}
+.section-title h2{font-size:42px;line-height:1.05;letter-spacing:-1.8px}
+.section-title p{color:var(--muted);margin-top:12px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.card{
+  background:linear-gradient(145deg,rgba(255,255,255,.035),rgba(184,255,56,.025));
+  border:1px solid rgba(255,255,255,.1);border-radius:24px;padding:30px;
+  transition:.25s;min-height:290px
+}
+.card:hover{transform:translateY(-5px);border-color:rgba(184,255,56,.35)}
+.icon{width:55px;height:55px;border-radius:16px;display:grid;place-items:center;background:rgba(184,255,56,.1);border:1px solid var(--line);color:var(--green);font-size:25px}
+.kicker{color:var(--green);font-size:12px;font-weight:800;letter-spacing:2px;margin:22px 0 9px}
+.card h3{font-size:24px;margin-bottom:10px}.card p{color:var(--muted)}
+.price{font-size:42px;font-weight:900;color:var(--green);margin:12px 0}
+.price small{font-size:14px;color:var(--muted);font-weight:500}
+.card .btn{display:block;text-align:center;margin-top:22px}
+.team{grid-template-columns:repeat(2,1fr)}
+.person{text-align:center}
+.avatar{width:105px;height:105px;border-radius:50%;margin:0 auto 20px;border:3px solid var(--green);display:grid;place-items:center;background:#172017;font-size:36px;overflow:hidden;box-shadow:0 0 25px rgba(184,255,56,.14)}
+.avatar img{width:100%;height:100%;object-fit:cover;object-position:50% 38%;display:block;transform:scale(1.04);transform-origin:center center}
+.avatar.rehan img{object-position:50% 38%}
+.avatar.wahab img{object-position:50% 38%}
+.tags{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin:20px 0}
+.tags span{border:1px solid var(--line);border-radius:999px;padding:7px 12px;color:#dce3df;font-size:12px}
+.cta{padding:55px;border:1px solid var(--line);border-radius:30px;text-align:center;background:radial-gradient(circle at center,rgba(184,255,56,.08),transparent 65%)}
+footer{padding:35px 0;border-top:1px solid rgba(255,255,255,.08);color:#7e888c;text-align:center}
+.chat{position:fixed;right:22px;bottom:22px;width:64px;height:64px;border-radius:50%;background:linear-gradient(135deg,var(--green),var(--green2));color:#071006;display:grid;place-items:center;font-size:27px;z-index:40;box-shadow:0 0 35px rgba(184,255,56,.3)}
+.dot{position:absolute;width:13px;height:13px;background:#ff5d5d;border-radius:50%;right:1px;top:0;border:2px solid #101419}
+@media(max-width:800px){
+ .navlinks{display:none}.menu{display:block}.hero{padding-top:55px}
+ .hero-grid{grid-template-columns:1fr}.visual{min-height:360px}
+ .grid,.team{grid-template-columns:1fr}.section{padding:45px 0}
+ h1{letter-spacing:-2.5px}.cta{padding:35px 20px}
+}
+</style>
+</head>
+<body>
+<header>
+ <div class="container nav">
+  <a class="brand" href="#">
+   <div class="logo">MR</div>
+   <div><span>META <b style="color:var(--green)">RECOVERIST</b></span><small>ACCOUNT RECOVERY SPECIALISTS</small></div>
+  </a>
+  <nav class="navlinks"><a href="#services">Services</a><a href="#pricing">Pricing</a><a href="#team">Team</a><a href="#contact">Contact</a></nav>
+  <button class="menu" onclick="alert('Menu: Services • Pricing • Team • Contact')">☰</button>
+ </div>
+</header>
+
+<main>
+<section class="hero">
+ <div class="container hero-grid">
+  <div>
+   <span class="badge">● SUPPORT & RECOVERY SERVICES</span>
+   <h1>Get your <span class="gradient">accounts</span> back.</h1>
+   <p>Professional assistance for account access, disabled profiles, hacked accounts and platform support issues. We focus on legitimate recovery and official appeal routes.</p>
+   <div class="actions"><a class="btn primary" href="#services">Explore Services →</a><a class="btn secondary" href="#contact">Contact Us</a></div>
+  </div>
+  <div class="visual">
+   <div class="float-card one"><strong>24/7</strong><span style="color:#8d979b">Support</span></div>
+   <div class="shield"><div class="check">✓</div></div>
+   <div class="float-card two"><strong>Secure</strong><span style="color:#8d979b">Recovery support</span></div>
+  </div>
+ </div>
+</section>
+
+<div class="container trust"><div class="trustbox">TRUSTED-STYLE • PROFESSIONAL • CONFIDENTIAL</div></div>
+
+<section class="section" id="services">
+ <div class="container">
+  <div class="section-title"><h2>Recovery & support <span class="gradient">services</span></h2><p>Clear service categories for common social-media account problems.</p></div>
+  <div class="grid">
+   <article class="card"><div class="icon">◎</div><div class="kicker">INSTAGRAM</div><h3>Account Recovery</h3><p>Guidance for disabled, suspended, hacked or inaccessible Instagram accounts using appropriate official support and appeal processes.</p></article>
+   <article class="card"><div class="icon">f</div><div class="kicker">FACEBOOK</div><h3>Facebook Support</h3><p>Assistance with account access, page restrictions, identity verification and appeal preparation.</p></article>
+   <article class="card"><div class="icon">◉</div><div class="kicker">BUSINESS</div><h3>Business Support</h3><p>Help organizing cases involving business assets, ad accounts and platform support requests.</p></article>
+  </div>
+ </div>
+</section>
+
+<section class="section" id="pricing">
+ <div class="container">
+  <div class="section-title"><h2>Simple <span class="gradient">packages</span></h2><p>Replace these sample prices with your actual rates before publishing.</p></div>
+  <div class="grid">
+   <article class="card"><div class="kicker">INSTAGRAM</div><h3>Account Removal</h3><div class="price">$200<small>+</small></div><p>Assistance with legitimate account-removal/reporting requests through official platform channels. Final scope depends on the case and platform decision.</p><a class="btn primary" href="#contact">Get Started →</a></article>
+   <article class="card"><div class="kicker">INSTAGRAM / FACEBOOK</div><h3>Post / Reel Removal</h3><div class="price">$80 <small>flat</small></div><p>Assistance preparing and submitting eligible copyright, policy or unwanted-content reports through official dispute and reporting processes.</p><a class="btn secondary" href="#contact">Get Started →</a></article>
+   <article class="card"><div class="kicker">SUSPENDED ACCOUNT</div><h3>Non-Appeal Unban</h3><div class="price">$50 <small>/ case</small></div><p>Support with reviewing available official recovery and support routes for suspended accounts where standard appeal options are unavailable.</p><a class="btn primary" href="#contact">Get Started →</a></article>
+  </div>
+ </div>
+</section>
+
+<section class="section" id="team">
+ <div class="container">
+  <div class="section-title"><h2>Meet the <span class="gradient">team</span></h2><p>Professional support focused on transparent, legitimate recovery workflows.</p></div>
+  <div class="grid team">
+   <article class="card person"><div class="avatar rehan"><img src="https://files.catbox.moe/x8fhhq.jpg" alt="Muhammad Rehan" loading="lazy"></div><h3>Muhammad Rehan</h3><div class="kicker">FOUNDER & RECOVERY SPECIALIST</div><p>Handles account-support cases and helps clients prepare clear, accurate appeals.</p><div class="tags"><span>Instagram</span><span>Facebook</span><span>Meta Support</span></div></article>
+   <article class="card person"><div class="avatar wahab"><img src="https://files.catbox.moe/7wy6ty.jpg" alt="Muhammad Wahab" loading="lazy"></div><h3>Muhammad Wahab</h3><div class="kicker">SUPPORT TEAM</div><p>Focused on organized case intake, documentation and client communication.</p><div class="tags"><span>Account Access</span><span>Appeals</span><span>Support</span></div></article>
+  </div>
+ </div>
+</section>
+
+<section class="section" id="contact">
+ <div class="container"><div class="cta">
+  <span class="badge">READY TO START?</span><h2 style="font-size:42px;margin:18px 0 8px">Tell us what happened.</h2>
+  <p style="color:var(--muted);max-width:650px;margin:auto">Send your case details and we'll explain the available legitimate support options. Never share passwords or verification codes.</p>
+  <div class="actions" style="justify-content:center"><a class="btn primary" href="https://wa.me/923198184163">WhatsApp: 03198184163 →</a><a class="btn secondary" href="https://wa.me/923181466616">2nd Contact: 03181466616 →</a></div><p style="color:#9aa3a7;font-size:13px;margin-top:14px">2nd Contact: 03181466616</p>
+ </div></div>
+</section>
+</main>
+
+<footer><div class="container">© 2026 Meta Recoverist. All rights reserved.</div></footer>
+<a class="chat" href="https://wa.me/923198184163" aria-label="WhatsApp">◔<i class="dot"></i></a>
+</body>
+</html>
